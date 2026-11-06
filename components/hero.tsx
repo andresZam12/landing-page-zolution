@@ -24,7 +24,9 @@ export function Hero() {
             </span>
           </span>
         </h1>
-        <p>Un agente de IA que atiende por WhatsApp y organiza tus citas en Google Calendar, a cualquier hora.</p>
+        <p>Un agente de IA que atiende por WhatsApp y organiza tus citas en Google Calendar, a cualquier hora. <br />
+        
+         Ocúpate de tus asuntos sin problema.</p>
         <div className="hero-actions">
           <a className="btn btn-primary" href={REGISTER_URL}>
             Crear mi agente <ArrowUpRight size={17} />
@@ -33,7 +35,7 @@ export function Hero() {
             <span className="wa-icon">
               <WhatsAppIcon size={15} />
             </span>{' '}
-            Hablar con nosotros
+            Habla con nosotros
           </a>
         </div>
         <div className="trust">

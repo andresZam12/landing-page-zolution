@@ -29,7 +29,7 @@ export function FeaturesSection() {
               Más tiempo para<br /><span>lo que importa.</span>
             </h2>
           </div>
-          <p>Zabio se encarga de las conversaciones repetitivas para que tú puedas enfocarte en atender, crecer y hacer bien tu trabajo.</p>
+          <p>Zabio se encarga de las conversaciones repetitivas de forma automática para que tú puedas enfocarte en atender, crecer y hacer bien tu trabajo.</p>
         </div>
         <div className="feature-grid" id="funciones">
           {features.map(({ number, title, text, icon: Icon, accent }, i) => (

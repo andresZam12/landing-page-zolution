@@ -133,7 +133,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outlin
 /* ---------- Phone mockup ---------- */
 .phone-wrap { position: relative; display: flex; justify-content: center; }
 .phone-glow { position: absolute; width: 390px; height: 390px; background: color-mix(in srgb, var(--orange) 30%, transparent); filter: blur(70px); border-radius: 50%; animation: glowPulse 7s ease-in-out infinite; }
-.phone { position: relative; width: 300px; height: 555px; border: 8px solid color-mix(in srgb, var(--ink) 92%, black 8%); border-radius: 40px; background: var(--surface); box-shadow: 22px 28px 0 color-mix(in srgb, var(--brown) 35%, var(--surface) 65%), 0 30px 70px rgba(0,0,0,.45); overflow: hidden; transform: rotate(4deg); }
+.phone { position: relative; width: 300px; height: 555px; border: 8px solid color-mix(in srgb, var(--ink) 92%, black 8%); border-radius: 40px; background: var(--surface); box-shadow: 18px 24px 45px color-mix(in srgb, var(--brown) 45%, transparent), 0 30px 70px rgba(0,0,0,.45); overflow: hidden; transform: rotate(4deg); }
 .phone-top { background: color-mix(in srgb, var(--ink) 92%, black 8%); color: #ddd2c8; font: 10px var(--font-mono); display: flex; justify-content: space-between; padding: 12px 20px 8px; }
 .chat-head { display: flex; align-items: center; gap: 9px; background: color-mix(in srgb, var(--brown-dark) 80%, var(--ink) 20%); color: #fff; padding: 11px 14px; }
 .avatar { width: 31px; height: 31px; border-radius: 11px 11px 11px 3px; display: grid; place-items: center; background: var(--orange); font-family: var(--font-display); font-size: 18px; font-style: italic; font-weight: 600; }
@@ -165,7 +165,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outlin
 /* ---------- Capabilities (dark band) ---------- */
 .capabilities { background: transparent; color: var(--on-dark); position: relative; z-index: 1; }
 .capability-row { min-height: 110px; display: flex; align-items: center; justify-content: space-between; gap: 22px; flex-wrap: wrap; padding: 20px 0; }
-.cap-label { color: var(--on-dark-soft); font: 11px var(--font-mono); }
+.cap-label { color: var(--brown-dark); font: 18px var(--font-mono); }
 .capability { display: flex; align-items: center; gap: 13px; font-size: 16px; font-weight: 700; }
 .capability-icon { width: 46px; height: 46px; border-radius: 15px; display: grid; place-items: center; flex: none; box-shadow: 0 10px 22px rgba(0,0,0,.4); }
 .capability-icon.whatsapp { background: var(--green); color: #fff; }
@@ -285,6 +285,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outlin
 /* ---------- Footer ---------- */
 footer { background: transparent; padding: 63px 0 27px; position: relative; z-index: 1; }
 .footer-top { display: flex; justify-content: space-between; padding-bottom: 62px; }
+.footer-top .logo { color: var(--brown-dark); }
 .footer-top p { color: var(--ink-soft); line-height: 1.6; font-size: 13px; margin-top: 22px; }
 .footer-links { display: flex; gap: 75px; }
 .footer-links div { display: flex; flex-direction: column; gap: 11px; min-width: 105px; }

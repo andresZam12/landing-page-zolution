@@ -14,7 +14,7 @@ export function CapabilitiesBar() {
   return (
     <section className="capabilities">
       <div className="container capability-row">
-        <span className="cap-label">Zabio se integra con</span>
+        <span className="cap-label">Zabio se integra con: </span>
         {items.map(({ label, icon, tone }) => (
           <span className="capability" key={label}>
             <span className={`capability-icon ${tone}`}>{icon}</span>

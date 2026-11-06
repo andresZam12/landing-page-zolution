@@ -9,7 +9,7 @@ const dmMono = DM_Mono({ subsets: ['latin'], variable: '--font-mono', weight: ['
 
 export const metadata: Metadata = {
   title: 'Zabio — Tu agenda, siempre al día',
-  description: 'Un agente de IA que atiende por WhatsApp y organiza tus citas en Google Calendar.',
+  description: 'Un agente de IA que atiende por WhatsApp y organiza tus citas en Google Calendar. Tú ocupate de tus asuntos sin problema.',
   generator: 'v0.app',
   icons: {
     icon: [
