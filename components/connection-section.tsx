@@ -1,7 +1,8 @@
-import { ArrowUpRight, CalendarDays, MessageCircle, Sparkles } from 'lucide-react'
+import { ArrowUpRight, CalendarDays, Sparkles } from 'lucide-react'
 
 import { WHATSAPP_URL } from '@/lib/constants'
 import { Reveal } from './reveal'
+import { WhatsAppIcon } from './whatsapp-icon'
 
 export function ConnectionSection() {
   return (
@@ -19,7 +20,7 @@ export function ConnectionSection() {
         </Reveal>
         <Reveal delay={120} className="flow">
           <div className="flow-node whatsapp-node">
-            <MessageCircle size={21} />
+            <WhatsAppIcon size={20} />
             WhatsApp
           </div>
           <div className="flow-arrow">→</div>
