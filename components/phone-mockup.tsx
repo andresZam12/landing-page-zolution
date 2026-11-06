@@ -75,7 +75,7 @@ export function PhoneMockup() {
         <div className="chat-head">
           <div className="avatar">Z</div>
           <div>
-            <strong>Zolution agent</strong>
+            <strong>Zabio agent</strong>
             <small>En línea ahora</small>
           </div>
           <span className="dots">•••</span>

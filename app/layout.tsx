@@ -8,7 +8,7 @@ const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-display', styl
 const dmMono = DM_Mono({ subsets: ['latin'], variable: '--font-mono', weight: ['400', '500'] })
 
 export const metadata: Metadata = {
-  title: 'Zolution — Tu agenda, siempre al día',
+  title: 'Zabio — Tu agenda, siempre al día',
   description: 'Un agente de IA que atiende por WhatsApp y organiza tus citas en Google Calendar.',
   generator: 'v0.app',
   icons: {

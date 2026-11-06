@@ -11,7 +11,7 @@ const faqs: [string, string][] = [
   ['¿Puedo probarlo antes de conectar mi número?', 'Sí. Puedes usar el simulador para probar tu agente antes de atender a tus clientes.'],
   ['¿Funciona con Google Calendar?', 'Sí. Google Calendar se conecta desde la plataforma para revisar disponibilidad y gestionar tus citas.'],
   ['¿Qué pasa si dos clientes piden la misma hora?', 'El agente revisa tu calendario antes de confirmar. Si no quedó en tu agenda, el agente no lo confirma.'],
-  ['¿Puedo ver las conversaciones?', 'Sí. Puedes ver tus conversaciones y citas desde el panel de Zolution.'],
+  ['¿Puedo ver las conversaciones?', 'Sí. Puedes ver tus conversaciones y citas desde el panel de Zabio.'],
 ]
 
 export function FaqSection() {

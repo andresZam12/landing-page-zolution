@@ -1,7 +1,6 @@
-import { MessageCircle } from 'lucide-react'
-
 import { WHATSAPP_URL } from '@/lib/constants'
 import { Logo } from './logo'
+import { WhatsAppIcon } from './whatsapp-icon'
 
 export function SiteFooter() {
   return (
@@ -22,15 +21,15 @@ export function SiteFooter() {
           </div>
           <div>
             <b>Empresa</b>
-            <a href="#que-es">Qué es Zolution</a>
+            <a href="#que-es">Qué es Zabio</a>
             <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">Contacto</a>
           </div>
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© 2026 Zolution. Hecho para negocios que avanzan.</span>
+        <span>© 2026 Zabio. Hecho para negocios que avanzan.</span>
         <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
-          <MessageCircle size={15} /> +57 317 719 9202
+          <WhatsAppIcon size={14} /> +57 317 719 9202
         </a>
       </div>
     </footer>

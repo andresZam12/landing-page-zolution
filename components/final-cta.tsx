@@ -1,7 +1,8 @@
-import { ArrowUpRight, MessageCircle } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 
 import { REGISTER_URL, WHATSAPP_URL } from '@/lib/constants'
 import { Reveal } from './reveal'
+import { WhatsAppIcon } from './whatsapp-icon'
 
 export function FinalCta() {
   return (
@@ -19,7 +20,7 @@ export function FinalCta() {
             Crear mi agente <ArrowUpRight size={17} />
           </a>
           <a className="cta-wa" href={WHATSAPP_URL} target="_blank" rel="noreferrer">
-            <MessageCircle size={18} fill="currentColor" /> Hablar con nosotros
+            <WhatsAppIcon size={17} /> Hablar con nosotros
           </a>
         </div>
       </Reveal>
