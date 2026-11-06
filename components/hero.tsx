@@ -1,6 +1,6 @@
 import { ArrowUpRight, MessageCircle } from 'lucide-react'
 
-import { WHATSAPP_URL } from '@/lib/constants'
+import { REGISTER_URL, WHATSAPP_URL } from '@/lib/constants'
 import { PhoneMockup } from './phone-mockup'
 
 export function Hero() {
@@ -15,7 +15,7 @@ export function Hero() {
         </h1>
         <p>Un agente de IA que atiende por WhatsApp y organiza tus citas en Google Calendar, a cualquier hora.</p>
         <div className="hero-actions">
-          <a className="btn btn-primary" href="/login">
+          <a className="btn btn-primary" href={REGISTER_URL}>
             Crear mi agente <ArrowUpRight size={17} />
           </a>
           <a className="text-link" href={WHATSAPP_URL} target="_blank" rel="noreferrer">

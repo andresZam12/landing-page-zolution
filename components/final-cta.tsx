@@ -1,6 +1,6 @@
 import { ArrowUpRight, MessageCircle } from 'lucide-react'
 
-import { WHATSAPP_URL } from '@/lib/constants'
+import { REGISTER_URL, WHATSAPP_URL } from '@/lib/constants'
 import { Reveal } from './reveal'
 
 export function FinalCta() {
@@ -15,7 +15,7 @@ export function FinalCta() {
         </h2>
         <p>Haz que cada conversación cuente.</p>
         <div className="hero-actions">
-          <a className="btn btn-light" href="/login">
+          <a className="btn btn-light" href={REGISTER_URL}>
             Crear mi agente <ArrowUpRight size={17} />
           </a>
           <a className="cta-wa" href={WHATSAPP_URL} target="_blank" rel="noreferrer">

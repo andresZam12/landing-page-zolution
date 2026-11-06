@@ -1,9 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { ArrowUpRight, Menu, MessageCircle, Sparkles, X } from 'lucide-react'
+import { ArrowUpRight, Menu, Sparkles, X } from 'lucide-react'
 
-import { WHATSAPP_URL } from '@/lib/constants'
+import { LOGIN_URL, REGISTER_URL, WHATSAPP_URL } from '@/lib/constants'
 import { Logo } from './logo'
 
 export function SiteHeader() {
@@ -29,15 +29,15 @@ export function SiteHeader() {
             <a href="#preguntas" onClick={() => setMenuOpen(false)}>Preguntas</a>
             <a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a>
             <div className="mobile-actions">
-              <a className="btn btn-ghost" href="/login">Entrar</a>
-              <a className="btn btn-dark" href="/login">
+              <a className="btn btn-ghost" href={LOGIN_URL}>Entrar</a>
+              <a className="btn btn-dark" href={REGISTER_URL}>
                 Regístrate <ArrowUpRight size={16} />
               </a>
             </div>
           </nav>
           <div className="nav-actions">
-            <a className="login-link" href="/login">Entrar</a>
-            <a className="btn btn-dark" href="/login">
+            <a className="login-link" href={LOGIN_URL}>Entrar</a>
+            <a className="btn btn-dark" href={REGISTER_URL}>
               Regístrate <ArrowUpRight size={16} />
             </a>
           </div>

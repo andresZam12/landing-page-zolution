@@ -25,15 +25,10 @@ export function SiteFooter() {
             <a href="#que-es">Qué es Zolution</a>
             <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">Contacto</a>
           </div>
-          <div>
-            <b>Legal</b>
-            <a href="#">Privacidad</a>
-            <a href="#">Términos</a>
-          </div>
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© 2025 Zolution. Hecho para negocios que avanzan.</span>
+        <span>© 2026 Zolution. Hecho para negocios que avanzan.</span>
         <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
           <MessageCircle size={15} /> +57 317 719 9202
         </a>
