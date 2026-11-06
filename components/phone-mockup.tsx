@@ -38,28 +38,39 @@ export function PhoneMockup() {
       return
     }
 
+    const start = () => {
+      if (started.current) return
+      started.current = true
+      observer.disconnect()
+
+      let i = 0
+      const playNext = () => {
+        i += 1
+        setVisibleCount(i)
+        if (i < steps.length) {
+          const delay = steps[i - 1]?.type === 'typing' ? 650 : 1000
+          window.setTimeout(playNext, delay)
+        }
+      }
+      window.setTimeout(playNext, 500)
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !started.current) {
-          started.current = true
-          observer.disconnect()
-
-          let i = 0
-          const playNext = () => {
-            i += 1
-            setVisibleCount(i)
-            if (i < steps.length) {
-              const delay = steps[i - 1]?.type === 'typing' ? 650 : 1000
-              window.setTimeout(playNext, delay)
-            }
-          }
-          window.setTimeout(playNext, 500)
-        }
+        if (entry.isIntersecting) start()
       },
       { threshold: 0.4 },
     )
     observer.observe(node)
-    return () => observer.disconnect()
+
+    // Safety net: if the observer never fires (unusual viewport/zoom, slow
+    // environments, etc.) the conversation still plays instead of staying blank.
+    const fallback = window.setTimeout(start, 2500)
+
+    return () => {
+      observer.disconnect()
+      window.clearTimeout(fallback)
+    }
   }, [])
 
   const visibleSteps = steps.slice(0, visibleCount).filter((step) => !(reducedMotion && step.type === 'typing'))

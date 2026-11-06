@@ -1,12 +1,14 @@
 import { ArrowUpRight } from 'lucide-react'
 
 import { REGISTER_URL, WHATSAPP_URL } from '@/lib/constants'
+import { BrandWatermark } from './brand-watermark'
 import { PhoneMockup } from './phone-mockup'
 import { WhatsAppIcon } from './whatsapp-icon'
 
 export function Hero() {
   return (
     <section className="hero container">
+      <BrandWatermark variant="white" className="hero-watermark" />
       <div className="hero-copy">
         <div className="eyebrow">
           <span className="eyebrow-dot" /> El agente que trabaja contigo
