@@ -16,7 +16,7 @@ export function FinalCta() {
         </h2>
         <p>Haz que cada conversación cuente.</p>
         <div className="hero-actions">
-          <a className="btn btn-light" href={REGISTER_URL}>
+          <a className="btn btn-dark" href={REGISTER_URL}>
             Crear mi agente <ArrowUpRight size={17} />
           </a>
           <a className="cta-wa" href={WHATSAPP_URL} target="_blank" rel="noreferrer">

@@ -19,12 +19,11 @@ export function StepsSection() {
         </div>
         <div className="steps-grid">
           {steps.map(([n, t, d], i) => (
-            <Reveal key={n} delay={i * 90} className="step">
-              <span className="step-number">{n}</span>
-              <div className="step-line" />
-              {i < steps.length - 1 && <div className="step-connector" />}
+            <Reveal key={n} delay={i * 90} className="step-card">
+              <span className="step-badge">{n}</span>
               <h3>{t}</h3>
               <p>{d}</p>
+              {i < steps.length - 1 && <span className="step-track" aria-hidden="true" />}
             </Reveal>
           ))}
         </div>

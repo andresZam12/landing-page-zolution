@@ -21,7 +21,7 @@ export function SiteHeader() {
           <a href="#contacto" onClick={() => setMenuOpen(false)}>Contacto</a>
           <div className="mobile-actions">
             <a className="btn btn-ghost" href={LOGIN_URL}>Entrar</a>
-            <a className="btn btn-dark" href={REGISTER_URL}>
+            <a className="btn btn-invert" href={REGISTER_URL}>
               Regístrate <ArrowUpRight size={16} />
             </a>
           </div>
