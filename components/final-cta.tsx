@@ -1,6 +1,7 @@
 import { ArrowUpRight } from 'lucide-react'
 
 import { REGISTER_URL, WHATSAPP_URL } from '@/lib/constants'
+import { BrandWatermark } from './brand-watermark'
 import { Reveal } from './reveal'
 import { WhatsAppIcon } from './whatsapp-icon'
 
@@ -9,6 +10,7 @@ export function FinalCta() {
     <section className="final-cta" id="contacto">
       <div className="cta-orb orb-one" />
       <div className="cta-orb orb-two" />
+      <BrandWatermark variant="black" className="cta-watermark" />
       <Reveal className="container cta-content">
         <span className="section-kicker light-kicker">/ EMPIEZA HOY</span>
         <h2>

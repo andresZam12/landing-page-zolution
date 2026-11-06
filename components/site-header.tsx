@@ -12,7 +12,7 @@ export function SiteHeader() {
   return (
     <header className="nav">
       <div className="container nav-inner">
-        <Logo />
+        <Logo variant="white" />
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
           <a href="#que-es" onClick={() => setMenuOpen(false)}>Qué es</a>
           <a href="#funciones" onClick={() => setMenuOpen(false)}>Funciones</a>
@@ -28,7 +28,7 @@ export function SiteHeader() {
         </nav>
         <div className="nav-actions">
           <a className="login-link" href={LOGIN_URL}>Entrar</a>
-          <a className="btn btn-dark" href={REGISTER_URL}>
+          <a className="btn btn-invert" href={REGISTER_URL}>
             Regístrate <ArrowUpRight size={16} />
           </a>
         </div>
