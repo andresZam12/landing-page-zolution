@@ -291,7 +291,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outlin
 .orb-two { width: 620px; height: 620px; right: -160px; top: -470px; animation-delay: -4s; }
 
 .brand-watermark { position: absolute; z-index: 0; opacity: .14; pointer-events: none; user-select: none; width: 640px; height: auto; animation: watermarkDrift 14s ease-in-out infinite; }
-.brand-watermark-black { opacity: .32; }
+.brand-watermark-black { opacity: .24; }
 .hero-watermark { right: 20px; bottom: -130px; }
 .cta-watermark { left: 20px; bottom: -150px; animation-delay: -6s; }
 
