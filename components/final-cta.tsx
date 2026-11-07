@@ -8,8 +8,10 @@ import { WhatsAppIcon } from './whatsapp-icon'
 export function FinalCta() {
   return (
     <section className="final-cta" id="contacto">
-      <div className="cta-orb orb-one" />
-      <div className="cta-orb orb-two" />
+      <div className="cta-orb-clip">
+        <div className="cta-orb orb-one" />
+        <div className="cta-orb orb-two" />
+      </div>
       <BrandWatermark variant="black" className="cta-watermark" />
       <Reveal className="container cta-content">
         <span className="section-kicker light-kicker">/ EMPIEZA HOY</span>
