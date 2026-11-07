@@ -60,8 +60,8 @@ export function PhoneMockup() {
         } else {
           schedule(() => {
             setVisibleCount(0)
-            schedule(playSequence, 600)
-          }, 6000)
+            schedule(playSequence, 400)
+          }, 4000)
         }
       }
       schedule(playNext, 500)
