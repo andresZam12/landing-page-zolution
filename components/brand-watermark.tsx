@@ -4,7 +4,7 @@ export function BrandWatermark({ variant, className }: { variant: 'black' | 'whi
   return (
     <Image
       className={`brand-watermark ${className ?? ''}`}
-      src={variant === 'white' ? '/logo-white.png' : '/logo-black.png'}
+      src={variant === 'white' ? '/logo-white.webp' : '/logo-black.webp'}
       alt=""
       aria-hidden="true"
       width={640}
