@@ -38,21 +38,40 @@ export function PhoneMockup() {
       return
     }
 
-    const start = () => {
-      if (started.current) return
-      started.current = true
-      observer.disconnect()
+    let cancelled = false
+    const timers: number[] = []
+    const schedule = (fn: () => void, delay: number) => {
+      const id = window.setTimeout(() => { if (!cancelled) fn() }, delay)
+      timers.push(id)
+      return id
+    }
 
+    // Plays the conversation once, then pauses on the finished state for a
+    // while and loops — just timed state updates, no continuous animation,
+    // so it stays cheap and never touches scroll performance.
+    const playSequence = () => {
       let i = 0
       const playNext = () => {
         i += 1
         setVisibleCount(i)
         if (i < steps.length) {
           const delay = steps[i - 1]?.type === 'typing' ? 650 : 1000
-          window.setTimeout(playNext, delay)
+          schedule(playNext, delay)
+        } else {
+          schedule(() => {
+            setVisibleCount(0)
+            schedule(playSequence, 600)
+          }, 6000)
         }
       }
-      window.setTimeout(playNext, 500)
+      schedule(playNext, 500)
+    }
+
+    const start = () => {
+      if (started.current) return
+      started.current = true
+      observer.disconnect()
+      playSequence()
     }
 
     const observer = new IntersectionObserver(
@@ -65,11 +84,13 @@ export function PhoneMockup() {
 
     // Safety net: if the observer never fires (unusual viewport/zoom, slow
     // environments, etc.) the conversation still plays instead of staying blank.
-    const fallback = window.setTimeout(start, 2500)
+    const fallback = schedule(start, 2500)
 
     return () => {
+      cancelled = true
       observer.disconnect()
       window.clearTimeout(fallback)
+      timers.forEach((id) => window.clearTimeout(id))
     }
   }, [])
 

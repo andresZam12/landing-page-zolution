@@ -61,10 +61,11 @@ body {
     linear-gradient(
       180deg,
       var(--tone-top) 0%,
-      color-mix(in srgb, var(--tone-top) 80%, var(--tone-bottom) 20%) 15%,
-      color-mix(in srgb, var(--tone-top) 45%, var(--tone-bottom) 55%) 32%,
-      color-mix(in srgb, var(--tone-top) 15%, var(--tone-bottom) 85%) 48%,
-      var(--tone-bottom) 62%,
+      color-mix(in srgb, var(--tone-top) 85%, var(--tone-bottom) 15%) 15%,
+      color-mix(in srgb, var(--tone-top) 78%, var(--tone-bottom) 22%) 17%,
+      color-mix(in srgb, var(--tone-top) 15%, var(--tone-bottom) 85%) 20%,
+      color-mix(in srgb, var(--tone-top) 6%, var(--tone-bottom) 94%) 35%,
+      var(--tone-bottom) 55%,
       var(--tone-bottom) 100%
     );
   color: var(--ink);
@@ -168,7 +169,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outlin
 /* ---------- Capabilities (dark band) ---------- */
 .capabilities { background: transparent; color: var(--on-dark); position: relative; z-index: 1; }
 .capability-row { min-height: 110px; display: flex; align-items: center; justify-content: space-between; gap: 22px; flex-wrap: wrap; padding: 20px 0; }
-.cap-label { color: var(--brown-dark); font: 18px var(--font-mono); }
+.cap-label { color: var(--on-dark-soft); font: 18px var(--font-mono); }
 .capability { display: flex; align-items: center; gap: 13px; font-size: 16px; font-weight: 700; }
 .capability-icon { width: 46px; height: 46px; border-radius: 15px; display: grid; place-items: center; flex: none; box-shadow: 0 10px 22px rgba(0,0,0,.4); }
 .capability-icon.whatsapp { background: var(--green); color: #fff; }
@@ -286,7 +287,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outlin
 .orb-one { width: 400px; height: 400px; left: -100px; bottom: -290px; }
 .orb-two { width: 620px; height: 620px; right: -160px; top: -470px; animation-delay: -4s; }
 
-.brand-watermark { position: absolute; z-index: 0; opacity: .07; pointer-events: none; user-select: none; width: 640px; height: auto; animation: watermarkDrift 14s ease-in-out infinite; }
+.brand-watermark { position: absolute; z-index: 0; opacity: .16; pointer-events: none; user-select: none; width: 640px; height: auto; animation: watermarkDrift 14s ease-in-out infinite; }
 .hero-watermark { right: 20px; bottom: -130px; }
 .cta-watermark { left: 20px; bottom: -150px; animation-delay: -6s; }
 
