@@ -3,7 +3,7 @@ import Image from 'next/image'
 export function BrandWatermark({ variant, className }: { variant: 'black' | 'white'; className?: string }) {
   return (
     <Image
-      className={`brand-watermark ${className ?? ''}`}
+      className={`brand-watermark brand-watermark-${variant} ${className ?? ''}`}
       src={variant === 'white' ? '/logo-white.webp' : '/logo-black.webp'}
       alt=""
       aria-hidden="true"
