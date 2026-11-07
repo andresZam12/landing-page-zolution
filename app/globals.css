@@ -61,8 +61,10 @@ body {
     linear-gradient(
       180deg,
       var(--tone-top) 0%,
-      color-mix(in srgb, var(--tone-top) 55%, var(--tone-bottom) 45%) 11%,
-      var(--tone-bottom) 23%,
+      color-mix(in srgb, var(--tone-top) 80%, var(--tone-bottom) 20%) 15%,
+      color-mix(in srgb, var(--tone-top) 45%, var(--tone-bottom) 55%) 32%,
+      color-mix(in srgb, var(--tone-top) 15%, var(--tone-bottom) 85%) 48%,
+      var(--tone-bottom) 62%,
       var(--tone-bottom) 100%
     );
   color: var(--ink);
