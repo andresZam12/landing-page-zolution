@@ -279,7 +279,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--orange); outlin
 .final-cta p { color: var(--ink-soft); font-size: 15px; }
 .final-cta .hero-actions { justify-content: center; margin-top: 30px; }
 .cta-wa { display: flex; align-items: center; gap: 8px; color: color-mix(in srgb, var(--green) 55%, var(--ink) 45%); font-size: 13px; font-weight: 700; }
-.cta-orb { position: absolute; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--orange) 30%, transparent); animation: orbFloat 11s ease-in-out infinite; }
+.cta-orb-clip { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.cta-orb { position: absolute; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--orange) 30%, transparent); animation: orbFloat 11s ease-in-out infinite; will-change: transform; }
 .orb-one { width: 400px; height: 400px; left: -100px; bottom: -290px; }
 .orb-two { width: 620px; height: 620px; right: -160px; top: -470px; animation-delay: -4s; }
 
